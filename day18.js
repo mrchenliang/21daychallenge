@@ -5,11 +5,11 @@ const countTickets = tickets => {
     blue: 0
   };
   tickets.forEach(item => {
-    if (item in obj) {
+    if (item in object) {
       object[item]++;
     }
   });
-  return obj;
+  return object;
 };
 
 const bestOdds = (tickets, raffleEntries) => {
